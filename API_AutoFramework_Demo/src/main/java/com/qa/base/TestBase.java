@@ -7,6 +7,12 @@ import java.util.Properties;
 
 public class TestBase {
 	public Properties prop;
+	public int RESPNSE_STATUS_CODE_200 = 200;
+    public int RESPNSE_STATUS_CODE_201 = 201;
+    public int RESPNSE_STATUS_CODE_404 = 404;
+    public int RESPNSE_STATUS_CODE_500 = 500;
+
+
 	public TestBase ()  {
 		prop = new Properties();
 		try {
@@ -22,5 +28,6 @@ public class TestBase {
 		}
 		
 	}
+
 
 }
