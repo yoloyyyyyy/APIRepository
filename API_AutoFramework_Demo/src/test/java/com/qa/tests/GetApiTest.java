@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +22,8 @@ public class GetApiTest extends TestBase {
 	String url;
 	RestClient restClient;
 	CloseableHttpResponse chp;
+
+	private static final org.apache.log4j.Logger Log = Logger.getLogger(GetApiTest.class);
 	
 	@BeforeClass
 	public void setup() {
@@ -31,20 +34,21 @@ public class GetApiTest extends TestBase {
 	
 	@Test
 	public void testGetAPI() throws ClientProtocolException, IOException {
+		Log.info("开始执行用例...");
 		restClient = new RestClient();
 		chp = restClient.get(url);
-		int statusCode = chp.getStatusLine().getStatusCode();
+		Log.info("测试响应状态码是否是200");
+		int statusCode = restClient.getStatusCode(chp);
 		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200,"response status code in not 200");
 		
 		//把响应内容存储在字符串对象
-		String responseString = EntityUtils.toString(chp.getEntity(),"UTF-8");
-		
-		JSONObject responseJson = JSONObject.parseObject(responseString);
+		JSONObject responseJson = restClient.getJSONObject(chp);
 		
 		String result = TestUtil.getValueByJsonpath(responseJson, "data[0]/first_name");
-		System.out.println(result);
-
+		Log.info("执行JSON解析，解析的内容是 "+result);
+		Log.info("接口内容响应断言");
         Assert.assertEquals(result, "Eve","first name is not Eve");
+        Log.info("测试用例结束...");
 	}
 	
 	

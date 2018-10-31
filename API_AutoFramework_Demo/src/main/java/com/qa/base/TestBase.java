@@ -16,9 +16,10 @@ public class TestBase {
 	public TestBase ()  {
 		prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+
+/*			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+
 					 "/src/main/java/com/qa/config/config.properties");
-			System.out.println(System.getProperty("user.dir"));
+			System.out.println(System.getProperty("user.dir"));*/
+			FileInputStream fis = new FileInputStream("C:\\Users\\Administrator\\git\\APIrepository\\API_AutoFramework_Demo\\src\\main\\java\\com\\qa\\config\\config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
