@@ -1,21 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1099" started-at="2018-10-30T14:38:32Z" finished-at="2018-10-30T14:38:33Z">
+  <suite name="Default suite" duration-ms="2510" started-at="2018-11-01T10:18:16Z" finished-at="2018-11-01T10:18:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1099" started-at="2018-10-30T14:38:32Z" finished-at="2018-10-30T14:38:33Z">
-      <class name="com.qa.tests.GetApiTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.GetApiTest@6e1ec318]" name="setup" is-config="true" duration-ms="6" started-at="2018-10-30T14:38:32Z" finished-at="2018-10-30T14:38:32Z">
+    <test name="Default test" duration-ms="2510" started-at="2018-11-01T10:18:16Z" finished-at="2018-11-01T10:18:18Z">
+      <class name="com.qa.tests.RegistTest">
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="1127" started-at="2018-11-01T10:18:17Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/nadesico.Customer/PreRegister]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegionSG]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[auottest01@ezbuy.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[111111]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[autotest01]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testGetAPI()[pri:0, instance:com.qa.tests.GetApiTest@6e1ec318]" name="testGetAPI" duration-ms="1084" started-at="2018-10-30T14:38:32Z" finished-at="2018-10-30T14:38:33Z">
+        </test-method> <!-- testRegist -->
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="17" started-at="2018-11-01T10:18:18Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/nadesico.Customer/PreRegister]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegionSG]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[auottest01@ezbuy.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[111111]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[autotest01]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAPI -->
-      </class> <!-- com.qa.tests.GetApiTest -->
+        </test-method> <!-- testRegist -->
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="13" started-at="2018-11-01T10:18:18Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/nadesico.Customer/PreRegister]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RegionSG]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[auottest02@ezbuy.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[111111]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[autotest01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegist -->
+      </class> <!-- com.qa.tests.RegistTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
