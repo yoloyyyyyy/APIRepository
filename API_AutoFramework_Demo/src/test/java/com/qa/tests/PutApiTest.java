@@ -1,5 +1,8 @@
 package com.qa.tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -8,7 +11,7 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -25,6 +28,7 @@ public class PutApiTest extends TestBase {
 	CloseableHttpResponse closeableHttpResponse;
 	
 	
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		testBase = new TestBase();
@@ -48,7 +52,7 @@ public class PutApiTest extends TestBase {
 		
 		//验证状态码是不是200
 		int statusCode = closeableHttpResponse.getStatusLine().getStatusCode();
-		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200,"response status code is not 200");
+		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200,"status code is not 200 ");
 		
 		
 		String responseString = EntityUtils.toString(closeableHttpResponse.getEntity());

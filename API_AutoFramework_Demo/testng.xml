@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.qa.tests.RegistTest"/>
       <class name="com.qa.tests.PutApiTest"/>
       <class name="com.qa.tests.PostApiTest"/>
       <class name="com.qa.tests.GetApiTest"/>

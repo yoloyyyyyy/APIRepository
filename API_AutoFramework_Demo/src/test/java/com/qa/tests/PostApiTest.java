@@ -1,5 +1,8 @@
 package com.qa.tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -44,7 +47,7 @@ public class PostApiTest extends TestBase {
 		
 		chp = restClient.post(url, jString, hMap);
 		int statusCode = chp.getStatusLine().getStatusCode();
-		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_201,"response status code in not 201");
+		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_201,"status code is not 200 ");
 		
 		//把响应内容存储在字符串对象
 		String responseString = EntityUtils.toString(chp.getEntity(),"UTF-8");

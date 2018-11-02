@@ -1,5 +1,8 @@
 package com.qa.tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
@@ -20,6 +23,7 @@ public class DeleteApiTest extends TestBase {
 	CloseableHttpResponse closeableHttpResponse;
 	
 	
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		testBase = new TestBase();

@@ -1,12 +1,9 @@
 package com.qa.restclient;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.http.Header;
-import org.apache.http.HttpResponse;
 import org.apache.http.ParseException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -25,7 +22,8 @@ import com.alibaba.fastjson.JSONObject;
 
 
 public class RestClient {
-	private static final org.apache.log4j.Logger Log = Logger.getLogger(RestClient.class);
+	private static final Logger Log = Logger.getLogger(RestClient.class);
+	
 	
 	/**
 	 * 不带请求头的get方法封装

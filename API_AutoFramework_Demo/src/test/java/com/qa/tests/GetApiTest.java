@@ -1,6 +1,9 @@
 package com.qa.tests;
 
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
@@ -39,7 +42,7 @@ public class GetApiTest extends TestBase {
 		chp = restClient.get(url);
 		Log.info("测试响应状态码是否是200");
 		int statusCode = restClient.getStatusCode(chp);
-		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200,"response status code in not 200");
+		Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200);
 		
 		//把响应内容存储在字符串对象
 		JSONObject responseJson = restClient.getJSONObject(chp);

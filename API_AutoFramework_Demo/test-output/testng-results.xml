@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2510" started-at="2018-11-01T10:18:16Z" finished-at="2018-11-01T10:18:18Z">
+  <suite name="Default suite" duration-ms="615" started-at="2018-11-02T16:01:34Z" finished-at="2018-11-02T16:01:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2510" started-at="2018-11-01T10:18:16Z" finished-at="2018-11-01T10:18:18Z">
+    <test name="Default test" duration-ms="615" started-at="2018-11-02T16:01:34Z" finished-at="2018-11-02T16:01:35Z">
       <class name="com.qa.tests.RegistTest">
-        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="1127" started-at="2018-11-01T10:18:17Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@c038203]" name="testRegist" duration-ms="292" started-at="2018-11-02T16:01:34Z" data-provider="postdata" finished-at="2018-11-02T16:01:35Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegist -->
-        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="17" started-at="2018-11-01T10:18:18Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@c038203]" name="testRegist" duration-ms="23" started-at="2018-11-02T16:01:35Z" data-provider="postdata" finished-at="2018-11-02T16:01:35Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegist -->
-        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@4c70fda8]" name="testRegist" duration-ms="13" started-at="2018-11-01T10:18:18Z" data-provider="postdata" finished-at="2018-11-01T10:18:18Z">
+        <test-method status="PASS" signature="testRegist(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.tests.RegistTest@c038203]" name="testRegist" duration-ms="20" started-at="2018-11-02T16:01:35Z" data-provider="postdata" finished-at="2018-11-02T16:01:35Z">
           <params>
             <param index="0">
               <value>

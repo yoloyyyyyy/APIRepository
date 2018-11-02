@@ -55,11 +55,12 @@ public class ExcelHandle {
        return null; 
     }
 
-	public static void main(String[] args) throws FileNotFoundException {
-/*//        String path = System.getProperty("user.dir")+"\\eztest\\src\\main\\java\\data\\auto01.xlsx";
-		String path = "C:\\Users\\yolo\\IdeaProjects\\ModelProject\\eztest\\src\\main\\java\\data\\auto01.xlsx";
+/*	public static void main(String[] args) throws FileNotFoundException {
+//        String path = System.getProperty("user.dir")+"\\eztest\\src\\main\\java\\data\\auto01.xlsx";
+		String path = "C:\\Users\\Administrator\\git\\APIRepository\\API_AutoFramework_Demo\\src\\main\\java\\com\\qa\\data\\auto01.xlsx";
         ExcelHandle handle = new ExcelHandle();
         Object[][] obj = handle.readExcel(path,0);
-        System.out.println(obj[0][0]);*/
-     }
+        System.out.println(obj[0][0]);
+     }*/
+
 }

@@ -1,48 +1,53 @@
 package com.qa.data;
 
 public class RegisitPara {
-	 private String region ;
-	    private String mail;
-	    private String password;
-	    private String nickname;
+	private String region;
+	private String email;
+	private String password;
+	private String nickname;
 
-	    public RegisitPara(String region, String mail, String password, String nickname) {
-	        this.region = region;
-	        this.mail = mail;
-	        this.password = password;
-	        this.nickname = nickname;
-	    }
+	public RegisitPara() {
+		super();
+	}
 
-	    public String getRegion() {
-	        return region;
-	    }
+	public RegisitPara(String region, String email, String password, String nickname) {
+		super();
+		this.region = region;
+		this.email = email;
+		this.password = password;
+		this.nickname = nickname;
+	}
 
-	    public void setRegion(String region) {
-	        this.region = region;
-	    }
+	public String getRegion() {
+		return region;
+	}
 
-	    public String getMail() {
-	        return mail;
-	    }
+	public void setRegion(String region) {
+		this.region = region;
+	}
 
-	    public void setMail(String mail) {
-	        this.mail = mail;
-	    }
+	public String getEmail() {
+		return email;
+	}
 
-	    public String getPassword() {
-	        return password;
-	    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-	    public void setPassword(String password) {
-	        this.password = password;
-	    }
+	public String getPassword() {
+		return password;
+	}
 
-	    public String getNickname() {
-	        return nickname;
-	    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-	    public void setNickname(String nickname) {
-	        this.nickname = nickname;
-	    }
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 
 }
