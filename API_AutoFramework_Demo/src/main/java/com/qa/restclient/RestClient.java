@@ -22,7 +22,8 @@ import com.alibaba.fastjson.JSONObject;
 
 
 public class RestClient {
-	private static final Logger Log = Logger.getLogger(RestClient.class);
+
+	private final static Logger Log = Logger.getLogger(RestClient.class);
 	
 	
 	/**

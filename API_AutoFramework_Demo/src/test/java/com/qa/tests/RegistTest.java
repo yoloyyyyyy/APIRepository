@@ -1,6 +1,5 @@
 package com.qa.tests;
 
-import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -14,7 +13,6 @@ import org.testng.annotations.Test;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.qa.data.RegisitPara;
-import com.qa.data.User;
 import com.qa.restclient.RestClient;
 import com.qa.util.ExcelHandle;
 import com.qa.util.TestUtil;
